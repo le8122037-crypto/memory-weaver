@@ -1,0 +1,15 @@
+# 密钥文件 - 绝对不要上传
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# 系统
+Thumbs.db
+Desktop.ini

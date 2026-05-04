@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+    background: linear-gradient(135deg, #fdf6f0 0%, #f5ebe0 50%, #fdf6f0 100%);
+    min-height: 100vh;
+    color: #3e3232;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 32px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #8b4513;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 0.45em;
+    color: #a0826d;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.description {
+    color: #8b7355;
+    margin-top: 8px;
+    font-size: 0.95em;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 24px;
+}
+
+#inputText {
+    width: 100%;
+    padding: 16px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid #d4c5b9;
+    border-radius: 12px;
+    background: #fffef9;
+    resize: vertical;
+    line-height: 1.8;
+    transition: border-color 0.3s;
+}
+
+#inputText:focus {
+    outline: none;
+    border-color: #c4956a;
+    box-shadow: 0 0 0 3px rgba(196, 149, 106, 0.15);
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #c4956a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #b0784a;
+}
+
+.btn-primary:disabled {
+    background: #d4c5b9;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #fffef9;
+    color: #8b4513;
+    border: 2px solid #d4c5b9;
+}
+
+.btn-secondary:hover {
+    background: #fdf6f0;
+    border-color: #c4956a;
+}
+
+.status {
+    color: #8b7355;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+/* Result Section */
+.result-section {
+    display: grid;
+    grid-template-columns: 32% 1fr;
+    gap: 20px;
+    min-height: 500px;
+}
+
+.panel-left, .panel-right {
+    background: #fffef9;
+    border: 2px solid #e8dcd0;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.panel-left h2, .panel-right h2 {
+    font-size: 1.1em;
+    color: #8b4513;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0e6d8;
+    position: sticky;
+    top: 0;
+    background: #fffef9;
+    z-index: 1;
+}
+
+/* Timeline */
+.chapter-block {
+    margin-bottom: 20px;
+}
+
+.chapter-title {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: #8b4513;
+    padding: 8px 12px;
+    background: #fdf6f0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.chapter-title:hover {
+    background: #f5ebe0;
+}
+
+.chapter-period {
+    font-size: 0.8em;
+    color: #a0826d;
+    font-weight: 400;
+}
+
+.event-list {
+    list-style: none;
+    padding: 8px 0 0 12px;
+}
+
+.event-item {
+    padding: 6px 10px;
+    border-left: 3px solid #e8dcd0;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #5a4a3a;
+}
+
+.event-item:hover {
+    border-left-color: #c4956a;
+    background: #fdf6f0;
+}
+
+.event-year {
+    font-weight: 700;
+    color: #c4956a;
+    margin-right: 6px;
+}
+
+/* Biography */
+.biography-content {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.biography-content h1 {
+    font-size: 1.6em;
+    color: #8b4513;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.biography-content h2 {
+    font-size: 1.3em;
+    color: #8b4513;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #f0e6d8;
+    padding-bottom: 8px;
+}
+
+.biography-content h3 {
+    font-size: 1.1em;
+    color: #a0826d;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.biography-content p {
+    text-indent: 2em;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 24px;
+    color: #a0826d;
+    font-size: 0.85em;
+}

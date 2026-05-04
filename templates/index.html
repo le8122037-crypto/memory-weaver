@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时光拾忆 · Memory Weaver</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏮 时光拾忆 <span class="subtitle">Memory Weaver</span></h1>
+            <p class="description">输入老人口述历史文本，AI 自动生成带时间线的温情个人传记</p>
+        </header>
+
+        <section class="input-section">
+            <textarea
+                id="inputText"
+                placeholder="请在此粘贴老人的口述历史文本（录音转写后的文字）...
+&#10;例如：我叫陈大山，1932年出生在河北唐山，父亲在铁路上做工..."
+                rows="6"
+            ></textarea>
+            <div class="button-row">
+                <button id="btnProcess" class="btn btn-primary">✨ 开始生成传记</button>
+                <button id="btnSample" class="btn btn-secondary">📋 加载示例文本</button>
+                <span id="status" class="status"></span>
+            </div>
+        </section>
+
+        <section class="result-section" id="resultSection" style="display: none;">
+            <div class="panel-left" id="timelinePanel">
+                <h2>📅 人生时间线</h2>
+                <div id="timelineContent" class="timeline-content"></div>
+            </div>
+            <div class="panel-right" id="biographyPanel">
+                <h2>📖 传记正文</h2>
+                <div id="biographyContent" class="biography-content"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span id="tokenDisplay">Token 消耗会在生成后显示</span>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
